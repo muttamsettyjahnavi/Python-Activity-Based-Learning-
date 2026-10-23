@@ -1,6 +1,6 @@
 #Python-Activity-Based-Learning.
-name:M.jahnavi
-rollnumber:26000961
+Name:M.jahnavi
+Roll number:26000961
 Topics:
 1.University Scholarship Allocation.
 2.Progressive Electricity Billing. 3.Hospital Billing and Patient Classification.
