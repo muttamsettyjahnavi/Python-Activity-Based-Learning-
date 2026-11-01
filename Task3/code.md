@@ -71,7 +71,7 @@ Total Bill = Number of Days × Room Charge
 
 **Step 11:** Stop the program.
 
-## Mermaid Flowchart Code Syntax
+## Flowchart
 
 ```mermaid
 graph TD
