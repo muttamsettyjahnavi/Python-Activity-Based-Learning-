@@ -128,7 +128,7 @@ print("Customer Name:", name)
 print("Total Electricity Bill: Rs.", bill)
 ```
 
-## 8. Test Cases
+## Test Cases
 
 | Test Case | Units Consumed | Expected Bill |
 |---|---:|---:|
