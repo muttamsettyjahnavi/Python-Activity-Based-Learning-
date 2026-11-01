@@ -110,7 +110,7 @@ PRINT bill
 STOP
 ```
 
-## Source Code (Python)
+## Source Code 
 
 ```python id="p3k8mz"
 name = input("Enter customer name: ")
