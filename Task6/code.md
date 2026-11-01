@@ -206,8 +206,6 @@ else:
 
 ## Sample Outputs
 
-Run the Python program and capture the actual console screenshots for your project submission.
-
 ### Output 1: Adult Passenger – Reservation Confirmed
 
 ```text
