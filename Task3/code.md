@@ -273,5 +273,3 @@ The Hospital Billing and Patient Classification System successfully calculates h
 The project uses basic Python concepts such as input statements, output statements, arithmetic operators, and conditional statements (if, elif, and else).
 
 It helps to reduce manual calculations and makes hospital billing easier to understand and perform.
-
-**Thus, the Hospital Billing and Patient Classification System provides a simple method for calculating hospital bills and classifying patients according to their total expenses.**
