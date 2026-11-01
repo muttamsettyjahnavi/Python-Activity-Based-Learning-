@@ -1,43 +1,48 @@
 #  Problem Statement
-The Manufacturing Cost and Profitability Analysis system is designed to calculate the total cost, total sales, and profit or loss of a product based on its quantity, cost per item, and selling price per item.
 
-The system accepts product details from the user, calculates the total manufacturing cost and total sales, and determines whether the business is making a profit, facing a loss, or having no profit and no loss.
+The Manufacturing Cost and Profitability Analysis system is designed to calculate the total cost, total sales, and profit or loss of a product.
+
+The program accepts the product name, quantity, cost per item, and selling price per item. It calculates the total cost and total sales, then determines whether the business is making a profit, facing a loss, or having no profit and no loss.
 
 # Objectives
 
 1. To enter the product name.
 2. To enter the quantity of products.
-3. To calculate the total manufacturing cost.
-4. To calculate the total sales amount.
-5. To calculate the profit or loss.
-6. To identify the business status.
+3. To enter the cost per item.
+4. To enter the selling price per item.
+5. To calculate the total cost.
+6. To calculate the total sales.
+7. To calculate the profit or loss.
+8. To identify the business status.
 
 # Assumptions
 
 1. The product name is entered by the user.
-2. Quantity must be entered as a whole number.
+2. Quantity is entered as a whole number.
 3. Cost per item and selling price per item are entered in rupees.
 4. Quantity, cost, and selling price are assumed to be non-negative.
 5. All products are assumed to be sold.
 6. No additional taxes or expenses are included.
 
-#  Algorithm
+# Algorithm
 
 1. Start the program.
 2. Enter the product name.
-3. Enter the quantity of products.
+3. Enter the quantity.
 4. Enter the cost per item.
 5. Enter the selling price per item.
 6. Calculate total cost using quantity × cost per item.
 7. Calculate total sales using quantity × selling price per item.
 8. Calculate profit using total sales − total cost.
-9. If profit is greater than zero, display "Business is in Profit".
-10. If profit is less than zero, display "Business is in Loss".
-11. Otherwise, display "No Profit No Loss".
-12. Stop the program.
+9. Display the product name, total cost, total sales, and profit.
+10. If profit is greater than zero, display "Business is in Profit".
+11. If profit is less than zero, display "Business is in Loss".
+12. Otherwise, display "No Profit No Loss".
+13. Stop the program.
 
 #  Flowchart 
-```mermaid
+
+```mermaid id="p8k3m2"
 graph TD
     A([Start]) --> B[/Enter Product Name/]
     B --> C[/Enter Quantity/]
@@ -45,15 +50,16 @@ graph TD
     D --> E[/Enter Selling Price per Item/]
     E --> F[Calculate Total Cost]
     F --> G[Calculate Total Sales]
-    G --> H[Profit = Total Sales - Total Cost]
-    H --> I{Is Profit > 0?}
-    I -- Yes --> J[/Display Business is in Profit/]
-    I -- No --> K{Is Profit < 0?}
-    K -- Yes --> L[/Display Business is in Loss/]
-    K -- No --> M[/Display No Profit No Loss/]
-    J --> N([Stop])
-    L --> N
-    M --> N
+    G --> H[Calculate Profit]
+    H --> I[/Display Product Details and Profit/]
+    I --> J{Is Profit > 0?}
+    J -- Yes --> K[/Display Business is in Profit/]
+    J -- No --> L{Is Profit < 0?}
+    L -- Yes --> M[/Display Business is in Loss/]
+    L -- No --> N[/Display No Profit No Loss/]
+    K --> O([Stop])
+    M --> O
+    N --> O
 ```
 
 # Pseudocode
@@ -71,19 +77,19 @@ total_sales = quantity * selling
 
 profit = total_sales - total_cost
 
-PRINT product
-PRINT total_cost
-PRINT total_sales
-PRINT profit
+DISPLAY product
+DISPLAY total_cost
+DISPLAY total_sales
+DISPLAY profit
 
 IF profit > 0 THEN
-    PRINT "Business is in Profit"
+    DISPLAY "Business is in Profit"
 
 ELSE IF profit < 0 THEN
-    PRINT "Business is in Loss"
+    DISPLAY "Business is in Loss"
 
 ELSE
-    PRINT "No Profit No Loss"
+    DISPLAY "No Profit No Loss"
 
 END IF
 
@@ -127,7 +133,7 @@ else:
 
 # 9. Sample Output 
 
-**Test Case 1 – Business in Profit**
+**Test Case 1 – Business is in Profit**
 
 ```text
 Enter product name: Pen
@@ -142,7 +148,7 @@ Profit: 500
 Business is in Profit
 ```
 
-**Test Case 2 – Business in Loss**
+**Test Case 2 – Business is in Loss**
 
 ```text
 Enter product name: Book
@@ -172,6 +178,21 @@ Profit: 0
 No Profit No Loss
 ```
 
+**Test Case 4 – Business is in Profit**
+
+```text
+Enter product name: Bag
+Enter quantity: 20
+Enter cost per item: 50
+Enter selling price per item: 80
+
+Product Name: Bag
+Total Cost: 1000
+Total Sales: 1600
+Profit: 600
+Business is in Profit
+```
+
 # Conclusion
 
-The Manufacturing Cost and Profitability Analysis program successfully calculates the total manufacturing cost, total sales, and profit or loss of a product. It identifies whether the business is making a profit, facing a loss, or having no profit and no loss. This simple Python program helps beginners understand basic arithmetic operations and conditional statements in real-world business calculations.
+The Manufacturing Cost and Profitability Analysis program successfully calculates the total cost, total sales, and profit or loss of a product. It identifies whether the business is making a profit, facing a loss, or having no profit and no loss. This program helps beginners understand basic arithmetic operations and conditional statements in Python.
